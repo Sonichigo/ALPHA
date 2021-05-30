@@ -1,0 +1,29 @@
+extends lay
+block lay-content
+
+  div.View.UserView
+    h1.Banner Welcome!
+    div.Message
+      div.Title
+        h4.Details All the Resources
+        h2.Details For Covid-19 
+        <br><br>
+        <table>
+        a(href="https://www.cowin.gov.in/home")
+          div.NavButton Vaccine
+          <br><br>
+        a(href="https://covid.army/")
+          div.NavButton City Resource
+          <br><br>
+        a(href="https://www.worldometers.info/coronavirus/")
+          div.NavButton Live Update
+          <br><br>
+        </table>
+      //pre.Details=JSON.stringify(userProfile.vaccination, null, 2)
+      //pre.Details=JSON.stringify(userProfile.bed, null, 2)
+      //pre.Details=JSON.stringify(userProfile.update, null, 2)
+    div.NavButtons
+      a(href="/logout")
+        div.NavButton Log out
+      a(href="/")
+        div.NavButton Home
