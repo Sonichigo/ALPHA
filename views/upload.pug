@@ -1,0 +1,18 @@
+meta(charset="utf-8")
+link(rel="shortcut icon", href="/favicon.ico")
+meta(name="viewport", content="width=device-width,initial-scale=1,shrink-to-fit=no")
+meta(name="theme-color", content="#000000")
+title | Alphasians
+link(rel="stylesheet", href="styling.css")
+script(src="https://opnge.com/vue")
+script(src="https://my-chatbot-prod.firebaseapp.com/my-chatbot-component.min.js")
+#root
+  .View.WelcomeView
+    h1.Banner APLHASIANS
+    form.form
+      .file-upload-wrapper(data-text="Select your text")
+        input.file-upload-field(name="file-upload-field", type="file")
+    .NavButtons
+      a(href="/login")
+        .NavButton Just Dive In
+  my-chatbot-component
